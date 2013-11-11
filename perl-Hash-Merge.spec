@@ -1,15 +1,15 @@
 %define upstream_name    Hash-Merge
-%define upstream_version 0.12
+%define upstream_version 0.200
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Merges arbitrarily deep hashes into a single hash
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Hash/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Hash/Hash-Merge-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Clone)
@@ -70,4 +70,5 @@ make test
 
 * Tue Jun 23 2009 cpan2dist 0.11-1mdv
 - initial mdv release, generated with cpan2dist
+
 
