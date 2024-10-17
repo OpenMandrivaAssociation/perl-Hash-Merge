@@ -8,7 +8,7 @@ Release:	3
 Summary:	Merges arbitrarily deep hashes into a single hash
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Hash/Hash-Merge-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
