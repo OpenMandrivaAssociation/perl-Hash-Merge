@@ -1,15 +1,13 @@
 %define upstream_name    Hash-Merge
-%define upstream_version 0.302
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.302
+Release:	2
 
 Summary:	Merges arbitrarily deep hashes into a single hash
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/perl5-utils/Hash-Merge
-Source0:	https://cpan.metacpan.org/authors/id/H/HE/HERMES/Hash-Merge-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/H/HE/HERMES/Hash-Merge-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -38,7 +36,7 @@ methods for your convenience, as well as a way to define you own. These are
 (currently):
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
